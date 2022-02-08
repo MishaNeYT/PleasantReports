@@ -1,0 +1,10 @@
+name: PleasantReports
+version: 1.0.0
+main: mc.pleasantvkchannel.pleasantreports.Main
+authors: [ PleasantVKChannel ]
+description: Позволяет отправлять игрокам жалобу, и сообщать о найденных багов к администрации сервера!
+commands:
+  report:
+    description: Основная команда для отправки жалоб.
+  reportbug:
+    description: Ищите баги и сообщайте администрации.

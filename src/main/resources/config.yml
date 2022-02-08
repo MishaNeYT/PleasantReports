@@ -1,0 +1,39 @@
+Settings:
+  PermissionReport: 'pleasantreports.report' # Позволяет игроку писать /report
+  PermissionReportBug: 'pleasantreports.reportbug' # Позволяет игроку писать /reportbug
+  ModeratorSend: 'pleasantreports.report.view' # Позволяет модерации сервера, смотреть жалобу игроков.
+  AdministratorSend: 'pleasantreports.reportbug.view' # Позволяет администрации сервера, смотреть жалобу игроков на сервер.
+  TargetAnnounce: true # Если включено, то игроку которому отправили жалобу, получит оповещения.
+
+# Звуки после удачной отправки жалобы и репорт бага.
+Sound:
+  Enable: false
+  SoundSend: ENTITY_EXPERIENCE_ORB_PICKUP
+
+Messages:
+  NoPerm: '&6PReport &8| &cУ вас нет прав!'
+  ConsoleDeny: '&cКоманду можно вводить только от имени игрока!'
+
+  ReportCommand:
+    UseCommand: '&6PReport &8| &cИспользуйте команду /report <игрок> <причина>'
+    EnterReason: '&6PReport &8| &cУкажите причину! Пишите только конкретную причину, а то вы попадёте в Мут сервера!'
+    ReportMyself: '&6PReport &8| &cВы не можете отправить жалобу себе!'
+    PlayerNotFound: '&6PReport &8| &cИгрок не найден!'
+    ReportSend: '&6PReport &8| &fВы &aуспешно &fотправили жалобу игроку - &c%player%'
+    TargetAnnounce: '&6PReport &8| &fИгрок &e%player% &fотправил на вас жалобу!'
+    BroadcastList:
+    - ''
+    - '&b&l НОВАЯ ЖАЛОБА ОТ ИГРОКА %reporter%:'
+    - '&8 | &fНарушитель: &c%player%'
+    - '&8 | &fПричина: &e%reason%'
+    - ''
+
+  ReportBugCommand:
+    UseCommand: '&6PReportBug &8| &cИспользуйте команду /reportbug <проблема>'
+    ReportBugSend: '&6PReportBug &8| &fВы &aуспешно &fотправили проблему к &cАдминистрации &fсервера!'
+    BroadcastList:
+      - ''
+      - '&b&l ЖАЛОБА НА СЕРВЕР, ОТ ИГРОКА %reporter%:'
+      - '&8 | &fПроблема:'
+      - '&8 | - &e%message%'
+      - ''
